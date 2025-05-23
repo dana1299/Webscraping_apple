@@ -1,0 +1,42 @@
+# Web Scraping y Predicción de Precios con ARIMA - Apple Inc. (AAPL)
+
+Este proyecto combina *web scraping* y *modelado estadístico* para obtener y analizar los precios históricos de la acción de *Apple Inc. (AAPL)* utilizando datos públicos de [Investing.com](https://www.investing.com).
+
+## Objetivo
+
+Obtener datos reales de precios bursátiles a través de técnicas de scraping automatizado y aplicar un modelo ARIMA para predecir el comportamiento de los precios en los próximos días.
+
+## Herramientas utilizadas
+
+- *Python*
+- *Selenium* – Para automatizar la navegación web
+- *Pandas* – Para limpieza y análisis de datos
+- *Matplotlib* – Para graficar series de tiempo
+- *Statsmodels* – Para aplicar el modelo ARIMA
+
+## Etapas del proyecto
+
+1. *Web Scraping*: automatización de la extracción de datos históricos de precios desde Investing.com
+2. *Limpieza de datos*: conversión de texto a fechas y números, ordenamiento por fecha
+3. *Visualización*: gráfico del comportamiento histórico del precio de la acción
+4. *Modelado ARIMA*: predicción de precios futuros en base a series temporales
+5. *Conclusiones*: análisis de la utilidad del modelo aplicado
+
+## Hipótesis
+
+> Si obtengo los precios históricos de la acción de Apple desde Investing.com usando web scraping, entonces podré analizarlos para ver cómo han cambiado con el tiempo y hacer una predicción simple sobre su comportamiento en los próximos días.
+
+## Resultado
+
+Se logró obtener una predicción básica del comportamiento de la acción usando ARIMA(1,1,1), con resultados visuales claros y explicables.
+
+## Visualización de ejemplo
+
+![Gráfico de precios](ruta-del-grafico.png)
+
+## Requisitos
+
+Antes de correr el proyecto, asegúrate de tener instaladas las siguientes bibliotecas:
+
+```bash
+pip install selenium pandas matplotlib statsmodels
